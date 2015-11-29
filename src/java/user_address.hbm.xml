@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="ecommerceproject.entity.user_address" table="user_address">
+    <id column="address_id" name="address_id" type="int">
+      <generator class="assigned"/>
+    </id>
+    <property column="state" name="state" type="string"/>
+    <property column="city" name="city" type="string"/>
+    <property column="country" name="country" type="string"/>
+    <property column="address_line1" name="address_line1" type="string"/>
+    <property column="date_time" name="date_time" type="timestamp"/>
+    <property column="pin_no" name="pin_no" type="int"/>
+    <property column="user_id" name="user_id" type="int"/>
+  </class>
+</hibernate-mapping>

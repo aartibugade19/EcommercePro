@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="ecommerceproject.entity.invoice" table="invoice">
+    <id column="invoice_id" name="invoice_id" type="int">
+      <generator class="assigned"/>
+    </id>
+    <property column="user_id" name="user_id" type="int"/>
+    <property column="product_id" name="product_id" type="int"/>
+    <property column="payment_type_id" name="payment_type_id" type="int"/>
+    <property column="address_id" name="address_id" type="int"/>
+    <property column="status_id" name="status_id" type="int"/>
+    <property column="product_prize" name="product_prize" type="int"/>
+    <property column="name" name="name" type="string"/>
+  </class>
+</hibernate-mapping>

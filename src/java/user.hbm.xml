@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="ecommerceproject.entity.user" table="user">
+    <id column="user_id" name="user_id" type="int">
+      <generator class="assigned"/>
+    </id>
+    <property column="mobile_no" name="mobile_no" type="int"/>
+    <property column="name" name="name" type="string"/>
+    <property column="email_id" name="email_id" type="string"/>
+    <property column="password" name="password" type="string"/>
+  </class>
+</hibernate-mapping>

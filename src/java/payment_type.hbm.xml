@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="ecommerceproject.entity.payment_type" table="payment_type">
+    <id column="payment_type_id" name="payment_type_id" type="int">
+      <generator class="assigned"/>
+    </id>
+    <property column="payment_type_name" name="payment_type_name" type="string"/>
+  </class>
+</hibernate-mapping>
